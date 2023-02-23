@@ -1,0 +1,14 @@
+import pandas as pd
+
+d1 = {'Name': ['sona','sopitha','keerthi'], 'registerno': ['21602167', '21602186', '21602187'], 'deptname': ['CSE', 'CSE', 'IT']}
+
+ds1 = pd.Dataset(d1)
+
+print('Dataset 1:', ds1)
+
+ds2 = pd.Dataset({'Address': ['chennai', 'chennai', 'chennai'], 'Name': ['sona', 'sopitha', 'keerthi']})
+
+print('Dataset 2:', ds2)
+
+ds_merged = ds1.merge(ds2)
+print('dataset merged', ds_merged)
